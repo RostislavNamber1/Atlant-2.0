@@ -5,6 +5,16 @@
     ..slaider-cart__img{
         width: 20%;
     }
+    .logo{
+        width: 20%;
+    }
+    .phone > a{
+        font-size: .8rem;
+    }
+    
+    .phone-text > a{
+        font-size: .875rem;
+    }
 
 }
 
