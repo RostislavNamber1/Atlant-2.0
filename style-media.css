@@ -5,9 +5,7 @@
     ..slaider-cart__img{
         width: 20%;
     }
-    .logo{
-        width: 20%;
-    }
+
     .phone > a{
         font-size: .9rem;
     }
@@ -17,6 +15,13 @@
     }
     .blok3 > img{
         width: 100%;
+    }
+    .blok-text{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -37,8 +42,11 @@
     .blok-main-img{
         display:none;
     }
+    .h1{
+        font-size: 55px;
+    }
     .blok-text{
-        width: 80%;
+        width: 100%;
     }
     .avtopark{
         flex-flow: wrap;
@@ -51,10 +59,10 @@
         align-items: center;
     }
     .blok3 > img {
-        width: 13%;
+        width: 38%;
     }
     .conteiner{
-        padding:  16px;
+        padding:  2px;
     }
     .blok-price-cart{
         flex-flow: column;

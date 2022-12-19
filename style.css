@@ -423,6 +423,8 @@ section{
     max-width: 160px;
     display: inline-flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
     /* display: inline-block; */
     margin: 0 0 -1px;
     padding: 15px 25px;
@@ -678,7 +680,8 @@ section[id^="content-tab"]{
 }
 
 .forma{
-    width: 550px;
+    min-width: 320;
+    max-width: 550px;
     gap: 1.25rem;
 }
 .forma-text{
@@ -687,10 +690,12 @@ section[id^="content-tab"]{
     
 }
 form{
-    width: 400px;
+    min-width: 320px;
+    max-width: 400px;
     display: flex;
     flex-flow: column;
     gap: 1.5rem;
+    padding: 0 10px;
 }
 form > input{
     height: 50px;
@@ -708,7 +713,7 @@ input[value]{
     padding-left: 10px;
 }
 textarea{
-    min-width: 400px;
+    min-width: 300px;
     max-width: 400px;
     min-height: 100px;
     max-height: 150px;
