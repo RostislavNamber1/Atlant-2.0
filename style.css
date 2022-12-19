@@ -76,6 +76,7 @@ img{
 }
 .df{
     display: flex;
+    flex-flow: row wrap;
 }
 .df-colum{
     display: flex;
