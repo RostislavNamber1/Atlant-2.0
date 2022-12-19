@@ -1,0 +1,878 @@
+/* https://brilliant-klepon-ebef05.netlify.app/ */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --body-color: #2D2D2D;
+    --color-decor: #2194FF;
+    --font-open-sans: 'Open Sans';
+  }
+
+/* резет команды */
+html {
+  box-sizing: border-box;
+  /* плавный скрол */
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .5px;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+}
+button{
+    cursor: pointer;
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--body-color);
+}
+a{
+  text-decoration: none;
+  color: unset;
+}
+.h1{
+    font-size: 64px;
+}
+.h2{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+.h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+.h22{
+    font-size: 22px;
+}
+.p{
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+}
+img{
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+.color-decor{
+    color: var(--color-decor);
+}
+.bagraund-decor{
+    background-color: var(--color-decor);
+}
+.bagraund-decor-blok{
+    background-color: var(--color-decor);
+    opacity: .05;
+}
+.df{
+    display: flex;
+}
+.df-colum{
+    display: flex;
+    flex-flow: column;
+}
+.df-centr{
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner{
+    max-width: 1140px;
+    width: 100%;
+}
+.text-centr{
+    width: 100%;
+    text-align: center;
+}
+.df-centr-bisaline{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+section{
+    padding: 50px 0;
+}
+
+
+
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+/* шапка */
+
+
+.blok1{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.logo{
+    max-width: 40%;
+}
+.phone > a{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.phone-text > a{
+    text-decoration: underline;
+    color: var(--color-decor);
+    cursor: pointer;
+}
+/* шапка */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+
+/* первый блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+.blok-text{
+    width: 45%;
+}
+.blok-main{
+    flex-flow: column;
+    justify-content: start;
+}
+.pogoda__img{
+    justify-content: start;
+    align-items: center;
+    gap: .625rem;
+}
+.blok-main-img{
+    width: 50vw;
+    position: absolute;
+    z-index: -10;
+    right: 0;
+}
+.blok3{
+    width: 80%;
+}
+.button{
+    font-size: 22px;
+    font-weight: 400;
+    background-color: var(--color-decor);
+    padding: 20px;
+    border-radius: 11px;
+    border: 2px solid var(--color-decor);
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+}
+.blok3 > img{
+    width: 30%;
+    height: 80px;
+}
+.blok3 >p{
+    text-align: center;
+    margin-top: 10px;
+}
+.pogoda{
+    justify-content:space-between;
+    align-items: center;
+}
+.moon::before{
+    content: url(/img/moon.svg);
+}
+.arrow::before{
+    content: url(/img/arrow.svg);
+}
+.sun::before{
+    content: url(/img/sun.svg);
+}
+.cloud::before{
+    content: url(/img/cloud.svg);
+}
+.snowflake::before{
+    content: url(/img/snowflake.svg);
+}
+.main__text > span{
+    color: var(--color-decor);
+}
+
+
+
+/* первый блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+/* второй блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+.pading40{
+    padding: 40px 0;
+}
+.bagraund-color{
+    background: rgba(33, 148, 255, 0.05);
+}
+.blok-price{
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+}
+.__color-text{
+    color: var(--color-decor);
+}
+.blok-price-cart {
+    flex-flow: row;
+    padding-top: 32px;
+    justify-content: center;
+}
+.blok-price-cart__cart1,
+.blok-price-cart__cart2,
+.blok-price-cart__cart3 {
+    flex-flow: column;
+    gap: 20px;
+}
+.cart__1{
+    display: flex;
+    gap: 50px;
+}
+.text-cart2 {  
+    color: var(--color-decor);  
+}
+.blok-price-cart__cart1,
+.blok-price-cart__cart3 {
+    max-width: 250px;
+    padding-top: 20px;
+}
+.blok-price-cart__cart2{
+    max-width: 550px;
+    width: 100%;
+    align-items: center;
+}
+
+.button-cart{
+    width: 155px;
+    height: 43px;
+    border-radius: 50px;
+    background-color: var(--color-decor);
+    color: #ffffff;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+}
+._text-color{
+    color: #F1F1F1;
+}
+
+
+
+/* второй блок */
+/* ********************************************************* */
+/* ********************************************************* */
+
+/* ********************************************************* */
+
+
+/* третий  блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+.advantages {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.advantages__cart {
+    width: 340px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.advantages__cart-img{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__cart-maintext{
+    width: 80%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 8px;
+}
+.advantages__cart-text{
+    width: 70%;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--font-open-sans);
+    text-align: center;
+    margin-top: 14px;
+}
+.avtopark {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.avtopark-img {
+
+}
+.avtopark-img>img{
+    width: 100%;
+}
+.avtopark-text {
+    width: 80%;
+}
+.avtopark-maintext {
+    font-size: 35px;
+}
+.avtopark-maintext *+*{
+    margin-top: 20px;
+}
+.avtopark-text-bagraund {
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    padding: 7px 12px;
+    background-color: var(--color-decor);
+}
+
+/* третий  блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+.p20{
+    padding: 35px 0;
+}
+/* четвертый блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+/* Базовый контейнер табов */
+.tabs{
+
+    min-width: 320px;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+    display: none;
+    padding: 15px;
+}
+.tabs>section>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+/* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+            opacity: 0;
+    }
+    to {
+            opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+            opacity: 0;
+    }
+    to {
+            opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs>input {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+    max-width: 160px;
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    border-width: 1px 1px 1px 1px;
+    background: rgba(241, 241, 241, 0.2);
+    border-radius: 20px;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs>label:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: var(--color-decor);
+    transition: .4s all;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+    color: rgb(255, 255, 255);
+    background: var(--color-decor);
+    transition: 1s all;
+}
+
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+display: block;
+}
+
+.btn{
+    padding: 30px 55px;
+    background-color: var(--color-decor);
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 11px;
+    border: 2px solid var(--color-decor);
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+    
+}
+section[id^="content-tab"]{
+    padding: 30px 0;
+    max-width: 37.5rem;
+    height: 16.25rem;
+
+}
+.tabs> section> picture{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* четвертый блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+/* пятый блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+.slaider-blok{
+    width: 100%;
+    height: 400px;
+    max-height: 100vh;
+    padding: 0;
+}
+.swiper {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    color: var(--color-decor);
+    font-size: 80px;
+  }
+  .swiper-button-next::after{
+    content: url("/img/right.svg") !important;
+  }
+  .swiper-button-prev::after{
+    content: url("/img/left.svg") !important;
+  }
+  .image-slider,
+  .swiper-pagination-bullet{
+    bottom: 0;
+  }
+  .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #F1F1F1;
+}
+.swiper-pagination-bullet{
+    all: unset;
+    width: 60px !important;
+    height: 20px !important;
+    border-radius: 10px !important;
+}
+
+.slider-cart {
+    width: 70%;
+    height: 60%;
+    background-color: #F1F1F1;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.slider-cart-more::after{
+    position: absolute;
+    top: 0;
+    width: 1000px;
+    height: 100px;
+    background-color: #2194FF;
+}
+
+.slaider-cart__img {
+    min-width: 150px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.slaider-cart-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items:flex-start;
+    gap: 1rem;
+}
+.slaider-cart-text__fio {
+    color: var(--color-decor);
+    font-weight: 400;
+    font-size: 24px;
+}
+.slaider-cart-text__city {
+
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--body-color);
+}
+.slaider-cart-text__text {
+    font-size: 16px !important;
+    color: var(--body-color);
+    font-family: var(--font-open-sans);
+    text-align: start;
+}
+
+/* пятый блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+/* шестой блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+.accordion {
+    background-color: #58585800;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.4s;
+    border-top: 1px solid #f1f1f16b;
+}
+
+.active, .accordion:hover {
+    background-color: #2194ff00;
+    color: var(--color-decor);
+}
+
+.accordion::before {
+    content: '\279C';
+
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    transform: rotate(90deg);
+}
+.active::before {
+    content: "\279C";
+    transform: rotate(-90deg);
+    color: var(--color-decor);
+}
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* шестой блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+/* седьмой блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+.forma-img-name{
+    
+    width: 200px;
+    height: 80px;
+    background-color: #2194ffdc;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.forma{
+    width: 550px;
+    gap: 1.25rem;
+}
+.forma-text{
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+form{
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+}
+form > input{
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+}
+input[value]{
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: rgba(45, 45, 45, 0.5);
+    padding-left: 10px;
+}
+textarea{
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 100px;
+    max-height: 150px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #2D2D2D;
+    padding: 10px;
+}
+textarea::placeholder{
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: rgba(45, 45, 45, 0.5);
+}
+form>button{
+    width: 220px;
+    height: 47px;
+    background-color: var(--color-decor);
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+input:invalid:active{
+    border: 1px solid #2194FF;
+}
+
+.firma {
+    width: 100%;
+    min-height: 66px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.firma__blok {
+    width: 166px;
+    height: 66px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.firma__blok > img{
+    width: 100%;
+    height: 60%;
+    object-fit:contain;
+}
+
+/* седьмой блок */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+
+
+.contakt {
+    width: 100%;
+    background-color: #F1F1F1;
+    border-radius: 33px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: 400px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.contakt-text {
+    padding: 40px;
+}
+.contakt-main__text{
+
+    text-align: left;
+    padding-bottom: 20px;
+
+}
+.contakt-main-text{
+    border-bottom: 1px solid #1B2639;
+}
+.contakt-main-text > *+*{
+    padding-bottom: 20px;
+}
+.contakt-main__text-1{
+    text-align: start;
+    padding-bottom:  20px;
+}
+.contakt-main__text-p{
+    color: #1B2639;
+}
+
+.contakt-map {
+    width: 50%;
+    height: 100%;
+}
+.contakt-map>iframe{
+    width: 100%;
+    height: 100%;
+}
+.color-bl{
+    color: #1B2639;
+}
+.contact-adress{
+    margin: 40px 0;
+}
+footer{
+    width: 100%;
+    min-height: 7.5rem;
+}
+
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+
+}
+.modal-content{
+    padding: 30px;
+}
+.modal:target {
+    opacity: 1; 
+	pointer-events: auto; 
+    overflow-y: auto; 
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+.modal-size{
+    font-size: 18px;
+}
+.modal-body{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+.modal-body input{
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.blok-thanks{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
