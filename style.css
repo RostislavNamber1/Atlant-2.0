@@ -60,7 +60,7 @@ a{
     font-weight: 700;
 }
 img{
-    /* width: 100%; */
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -373,7 +373,6 @@ section{
 
 /* Базовый контейнер табов */
 .tabs{
-
     min-width: 320px;
     max-width: 100%;
     padding: 0px;
@@ -422,7 +421,9 @@ section{
 /* Стили переключателей вкладок (табов) */
 .tabs>label {
     max-width: 160px;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: space-around;
+    /* display: inline-block; */
     margin: 0 0 -1px;
     padding: 15px 25px;
     font-weight: 600;
@@ -774,12 +775,14 @@ input:invalid:active{
     display: flex;
     flex-flow: row;
     justify-content: center;
-    height: 400px;
+    min-height: 400px;
+    max-height: max-content;
     margin-top: 20px;
     overflow: hidden;
 }
 .contakt-text {
     padding: 40px;
+    width: 100%;
 }
 .contakt-main__text{
 
@@ -802,7 +805,7 @@ input:invalid:active{
 }
 
 .contakt-map {
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 .contakt-map>iframe{

@@ -60,6 +60,13 @@
         flex-flow: column;
         align-items: center;
         gap: 1rem;
+        padding: 0 5%;
+    }
+    .contakt {
+        flex-flow: wrap;
+    }
+    .contakt-map{
+        width: 100%;
     }
 }
 @media (min-width: 576px) {
