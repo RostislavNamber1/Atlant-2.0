@@ -149,8 +149,9 @@ section{
     width: 45%;
 }
 .blok-main{
+    display: flex;
     flex-flow: column;
-    justify-content: start;
+    justify-content: center;
 }
 .pogoda__img{
     justify-content: start;
