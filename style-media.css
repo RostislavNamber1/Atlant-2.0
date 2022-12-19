@@ -9,11 +9,14 @@
         width: 20%;
     }
     .phone > a{
-        font-size: .8rem;
+        font-size: .9rem;
     }
     
     .phone-text > a{
-        font-size: .875rem;
+        font-size: .9rem;
+    }
+    .blok3 > img{
+        width: 40%;
     }
 
 }
