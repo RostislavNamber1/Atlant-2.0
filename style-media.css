@@ -26,6 +26,9 @@
     .slaider-cart__img{
         display: none;
     }
+    .slaider-cart-text{
+        width: 100%;
+    }
 
 }
 
