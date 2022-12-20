@@ -33,7 +33,7 @@
         top: 10px;
     }
     .slaider-cart__img>img{
-        width: auto;
+        width: none;
         height: 100%;
         border-radius: 50%;
     }
