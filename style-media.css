@@ -25,8 +25,8 @@
     }
     .slaider-cart__img{
         width: 60px !important;
-        height: 60px !important;
-        border-radius: 50%;
+        height: 80px !important;
+        border-radius: 30px;
         overflow: hidden;
         position: absolute;
         right: 10px;
