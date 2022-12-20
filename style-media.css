@@ -24,8 +24,8 @@
         align-items: center;
     }
     .slaider-cart__img{
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         overflow: hidden;
         position: absolute;
@@ -35,7 +35,7 @@
     .swiper-button-prev::after,
     .swiper-button-next::after{
         width: 5vh;
-        
+
       }
 
 }
