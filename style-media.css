@@ -32,7 +32,11 @@
         right: 10px;
         top: 10px;
     }
-
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        width: 5vh;
+        
+      }
 
 }
 
