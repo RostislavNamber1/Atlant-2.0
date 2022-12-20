@@ -32,10 +32,13 @@
         right: 10px;
         top: 10px;
     }
+    .slaider-cart__img> img{
+        width: 100%;
+        height: 100%;
+    }
     .swiper-button-prev::after,
     .swiper-button-next::after{
-        width: 5vh;
-
+        display: none;
       }
 
 }
