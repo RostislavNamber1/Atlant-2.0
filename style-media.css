@@ -24,13 +24,12 @@
         align-items: center;
     }
     .slaider-cart__img{
-        width: 60px !important;
-        height: 80px !important;
+        height: 100px !important;
         border-radius: 30px;
         overflow: hidden;
         position: absolute;
         right: 10px;
-        top: 10px;
+        top: 5px;
     }
     .slaider-cart__img>img{
         width: none;
