@@ -31,7 +31,9 @@
         position: absolute;
         right: 10px;
         top: 10px;
-        
+    }
+    .slaider-cart__img>img{
+        width: 0;
     }
 
     .swiper-button-prev::after,
