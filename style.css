@@ -59,6 +59,11 @@ a{
     font-family: var(--font-open-sans);
     font-weight: 700;
 }
+.grid{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
 img{
     max-width: 100%;
     object-fit: cover;
