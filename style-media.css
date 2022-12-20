@@ -5,7 +5,6 @@
     ..slaider-cart__img{
         width: 20%;
     }
-
     .phone > a{
         font-size: .9rem;
     }
@@ -13,6 +12,7 @@
     .phone-text > a{
         font-size: .9rem;
     }
+    .slaider-cart-text,
     .blok3 > img{
         width: 100%;
     }
@@ -26,9 +26,7 @@
     .slaider-cart__img{
         display: none;
     }
-    .slaider-cart-text{
-        width: 100%;
-    }
+
 
 }
 
