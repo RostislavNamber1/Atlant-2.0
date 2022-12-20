@@ -33,7 +33,9 @@
         top: 10px;
     }
     .slaider-cart__img>img{
-        width: 0;
+        width: auto;
+        height: 100%;
+        border-radius: 50%;
     }
 
     .swiper-button-prev::after,
