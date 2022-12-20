@@ -24,6 +24,7 @@
         align-items: center;
     }
     .slaider-cart__img{
+        width: 100px !important;
         height: 100px !important;
         border-radius: 30px;
         overflow: hidden;
@@ -31,7 +32,7 @@
         right: 10px;
         top: 5px;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 50%;
     }
 
     .swiper-button-prev::after,
