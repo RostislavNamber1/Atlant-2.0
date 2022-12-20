@@ -63,7 +63,7 @@ a{
     display: grid;
     grid-template-rows: auto;
     gap: 1rem;
-    place-items: centr;
+    place-items: center;
 }
 img{
     max-width: 100%;
@@ -385,11 +385,11 @@ section{
     margin: 0 auto;
 }
 /* Стили секций с содержанием */
-.tabs>.grid>section {
+.tabs>section {
     display: none;
     padding: 15px;
 }
-.tabs>.grid>section>p {
+.tabs>section>p {
     margin: 0 0 5px;
     line-height: 1.5;
     color: #383838;
@@ -420,12 +420,12 @@ section{
     }
 }
 /* Прячем чекбоксы */
-.tabs>.grid>input {
+.tabs>input {
     display: none;
     position: absolute;
 }
 /* Стили переключателей вкладок (табов) */
-.tabs>.grid>label {
+.tabs>label {
     max-width: 160px;
     display: inline-flex;
     justify-content: space-around;
@@ -444,14 +444,14 @@ section{
 }
 /* Изменения стиля переключателей вкладок при наведении */
 
-.tabs>.grid>label:hover {
+.tabs>label:hover {
     color: rgb(255, 255, 255);
     cursor: pointer;
     background-color: var(--color-decor);
     transition: .4s all;
 }
 /* Стили для активной вкладки */
-.tabs>.grid>input:checked+label {
+.tabs>input:checked+label {
     color: rgb(255, 255, 255);
     background: var(--color-decor);
     transition: 1s all;
@@ -477,7 +477,7 @@ section[id^="content-tab"]{
     height: 16.25rem;
 
 }
-.tabs>.grid> section> picture{
+.tabs> section> picture{
     width: 100%;
     display: flex;
     justify-content: center;
