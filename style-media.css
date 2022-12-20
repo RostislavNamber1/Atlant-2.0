@@ -30,11 +30,8 @@
         position: absolute;
         right: 10px;
         top: 5px;
-    }
-    .slaider-cart__img>img{
-        width: none;
-        height: 100%;
-        border-radius: 50%;
+        overflow: hidden;
+        border-radius: 10px;
     }
 
     .swiper-button-prev::after,
